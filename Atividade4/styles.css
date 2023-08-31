@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif, "times";
+background-color: #cf380a;
+}
+#formulario {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type= "email"],
+textarea {
+    padding: 10 px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*opções*/
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button[type="button"]
+{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #333333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="button"]
+{
+    background-color: #511E9848;
+}
+
+select{
+    padding: 10PX;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width:  50%;
+    margin-bottom: 100px;
+    background-image: linear-gradient(RGBA(248,208, 208, 0.801), rgba(238, 149, 149, 0.644));
+}
+
+select:focus{
+    outline : 2px solid rgb(24, 22, 22);
+    border-color: #333333;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+input:invalid{
+    border: 2px solid rgb(221, 93, 93);
+}
+.rodape {
+    margin: 0 auto;
+    text-align: center;
+
+}
