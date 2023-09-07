@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(5, 5, 6);
+}
+
+img{
+    margin: 0 auto;
+    width: 250px;
+    overflow: hidden;
+    float: left;
+}
+
+.imagem{
+    width: 500px;
+    height:200px ;
+    margin: auto;
+    background-color: rgb(240, 238, 238);
+    margin-left: 180px;
+}
+
+.legenda{
+    text-align: center;
+}
+
+.Cabecalho{
+    background-color: rgb(240, 240, 243);
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    background-color: rgb(203, 20, 142);
+    margin-left: 20px;
+    height:650px ;
+    width: 300px;
+
+}
