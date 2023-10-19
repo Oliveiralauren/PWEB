@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12 - 2</title>
+</head>
+<body>
+    <script>
+        function Conta () {
+            var nomeCorrentista;
+            var banco;
+            var numeroConta;
+            var saldo;
+
+            this.getNomeCorrentista = function() {
+                return nomeCorrentista;
+            };
+            this.setNomeCorrentista = function(value) {
+                nomeCorrentista = value;
+            };
+            this.getBanco = function() {
+                return banco;
+            };
+            this.setBanco = function(value) {
+                banco = value;
+            };
+            this.getNumeroConta = function() {
+                return numeroConta;
+            };
+            this.setNumeroConta = function(value) {
+                numeroConta = value;
+            };
+            this.getSaldo = function() {
+                return saldo;
+            };
+            this.setSaldo = function(value) {
+                saldo = value;
+            };
+}
+        function Corrente() {
+            var saldoEspecial;
+            this.getSaldoEspecial = function() {
+                return saldoEspecial;
+            };
+            this.setSaldoEspecial = function(value) {
+                saldoEspecial = value;
+            };
+
+        }
+        function Poupanca() {
+            var juros;
+            var dataVencimento;
+            this.getJuros = function() {
+                return juros;
+            };
+            this.setJuros = function(value) {
+                juros = value;
+            };
+            this.getDataVencimento = function() {
+                return dataVencimento;
+            };
+            this.setDataVencimento = function(value) {
+                dataVencimento = value;
+            };
+        }
+        Corrente.prototype = new Conta();
+        Poupanca.prototype = new Conta();
+
+        contaCorrente = new Corrente();
+        contaPoupanca = new Poupanca();
+
+        contaPoupanca.setNomeCorrentista("Lauren Oliveira");
+        contaPoupanca.setBanco("Itaú");
+        contaPoupanca.setNumeroConta("5297");
+        contaPoupanca.setSaldo("100.000");
+        contaPoupanca.setJuros("1%")
+        contaPoupanca.setDataVencimento("08/2024");
+
+        contaCorrente.setNomeCorrentista("Lauren Oliveira");
+        contaCorrente.setBanco("Itaú");
+        contaCorrente.setNumeroConta("5297");
+        contaCorrente.setSaldo("100.000");
+        contaCorrente.setSaldoEspecial("1.000");
+
+        alert("\nNome Correntista: " +  contaCorrente.getNomeCorrentista() +
+         "\nBanco: " + contaCorrente.getBanco() + 
+         "\nNúmero da Conta:" + contaCorrente.getNumeroConta() + 
+         "\nSaldo: " + contaCorrente.getSaldo() + 
+         "\nSaldo Especial: " + contaCorrente.getSaldoEspecial() +
+         "\nJuros: " + contaPoupanca.getJuros() +
+         "\nData de Vencimento: " + contaPoupanca.getDataVencimento())
+</script>
+</body>
+</html>
