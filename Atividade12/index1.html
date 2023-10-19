@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12 - 1</title>
+</head>
+<body>
+    <script>
+    function Area(base, altura) {
+        this.base = base;
+        this.altura = altura;
+
+        this.MostraDados = function() {
+            return this.base*this.altura;
+        }
+    }
+    var Calculo = new Area(10, 5);
+    alert(Calculo.MostraDados());
+</script>
+</body>
+</html>
